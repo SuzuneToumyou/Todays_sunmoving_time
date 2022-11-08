@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import math
 import datetime
@@ -202,22 +202,31 @@ def calc(yy, mm, dd, i, lon, lat, alt=0, hh=-1, m=-1):
             if ((pht > t4) and (ht < t4)):
                 result.append((key, math.floor(dr)))
             """
+            #itme 0
             if ((pht < t1) and (ht > t1)):
                 result.append((key, None))
+            #item 1
             if ((pht < t2) and (ht > t2)):
                 result.append((key, None))
+            #item 2
             if ((pht < t3) and (ht > t3)):
                 result.append((key, None))
+            #item 3
             if ((pht < t4) and (ht > t4)):
                 result.append((key, math.floor(dr)))
+            #item 4
             if ((pdr < 180) and (dr > 180)):
                 result.append((key, math.floor(ht)))
+            #item 5
             if ((pht > t4) and (ht < t4)):
                 result.append((key, math.floor(dr)))
+            #item 6
             if ((pht > t3) and (ht < t3)):
                 result.append((key, None))
+            #item 7
             if ((pht > t2) and (ht < t2)):
                 result.append((key, None))
+            #item 8
             if ((pht > t1) and (ht < t1)):
                 result.append((key, None))
             """
